@@ -1,0 +1,53 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
+a{color:#8B5CF6;text-decoration:none}
+a:hover{text-decoration:underline}
+
+header{text-align:center;padding:48px 16px 32px}
+header h1{font-size:2rem;font-weight:700;letter-spacing:-1px}
+.accent{color:#8B5CF6}
+.tagline{font-size:1.1rem;color:#94a3b8;margin-top:8px}
+
+.filters{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 24px;padding:0}
+.filters input,.filters select{flex:1 1 200px;min-height:44px;padding:10px 14px;border:1px solid #334155;border-radius:8px;background:#1e293b;color:#e2e8f0;font-size:1rem}
+.filters input::placeholder{color:#64748b}
+.filters input:focus,.filters select:focus{outline:none;border-color:#8B5CF6}
+
+.tools-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:40px}
+.card{background:#1e293b;border-radius:12px;padding:20px;border:1px solid #334155;transition:border-color .2s}
+.card:hover{border-color:#8B5CF6}
+.card-header{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:12px}
+.card-header h3{font-size:1.1rem;font-weight:600}
+.card-header h3 a{color:#e2e8f0}
+.card-header h3 a:hover{color:#8B5CF6}
+.badges{display:flex;gap:6px;flex-shrink:0;flex-wrap:wrap}
+.badge{font-size:.7rem;padding:3px 8px;border-radius:20px;font-weight:600;white-space:nowrap}
+.badge-free{background:#065f46;color:#6ee7b7}
+.badge-beginner{background:#1e3a5f;color:#7dd3fc}
+.badge-intermediate{background:#713f12;color:#fcd34d}
+.badge-advanced{background:#7f1d1d;color:#fca5a5}
+.category-tag{font-size:.75rem;color:#8B5CF6;margin-bottom:8px;display:inline-block}
+.description{font-size:.9rem;color:#94a3b8;margin-bottom:10px}
+.best-for{font-size:.85rem;color:#cbd5e1}
+.best-for strong{color:#8B5CF6}
+.pricing{font-size:.8rem;color:#64748b;margin-top:8px}
+
+.newsletter{text-align:center;background:#1e293b;border-radius:12px;padding:32px 20px;margin-bottom:40px;border:1px solid #334155}
+.newsletter h2{font-size:1.3rem;margin-bottom:16px}
+.newsletter form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.newsletter input{min-height:44px;padding:10px 14px;border:1px solid #334155;border-radius:8px;background:#0f172a;color:#e2e8f0;font-size:1rem;flex:1 1 220px;max-width:320px}
+.newsletter button{min-height:44px;padding:10px 24px;border:none;border-radius:8px;background:#8B5CF6;color:#fff;font-size:1rem;font-weight:600;cursor:pointer}
+.newsletter button:hover{background:#7c3aed}
+
+footer{text-align:center;padding:24px 16px;color:#64748b;font-size:.85rem;border-top:1px solid #1e293b}
+
+.empty{text-align:center;padding:48px 16px;color:#64748b;font-size:1.1rem}
+
+@media(min-width:480px){
+  header h1{font-size:2.5rem}
+  .tools-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(min-width:768px){
+  .tools-grid{grid-template-columns:repeat(3,1fr)}
+}

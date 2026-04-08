@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NoCodePath - Find the Right No-Code Tool</title>
+<meta name="description" content="Curated directory of no-code and low-code tools organized by what you want to build.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H1N5PR9Y0H"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-H1N5PR9Y0H');</script>
+</head>
+<body>
+<header>
+<div class="container">
+<h1>NoCode<span class="accent">Path</span></h1>
+<p class="tagline">Find the right tool. Build without code.</p>
+</div>
+</header>
+<main class="container">
+<section class="filters">
+<input type="text" id="search" placeholder="Search tools..." aria-label="Search tools">
+<select id="category-filter" aria-label="Filter by category">
+<option value="all">All Categories</option>
+<option value="Build a Website">Build a Website</option>
+<option value="Build a Web App">Build a Web App</option>
+<option value="Build a Mobile App">Build a Mobile App</option>
+<option value="Automate Workflows">Automate Workflows</option>
+<option value="Build a Database/Backend">Build a Database/Backend</option>
+<option value="Build an Online Store">Build an Online Store</option>
+<option value="Build Forms/Surveys">Build Forms/Surveys</option>
+</select>
+<select id="complexity-filter" aria-label="Filter by complexity">
+<option value="all">All Levels</option>
+<option value="Beginner">Beginner</option>
+<option value="Intermediate">Intermediate</option>
+<option value="Advanced">Advanced</option>
+</select>
+</section>
+<section id="tools-grid" class="tools-grid"></section>
+<section class="newsletter">
+<h2>Get weekly no-code tips</h2>
+<form action="https://buttondown.com/api/emails/embed-subscribe/japandevtools" method="post" target="popupwindow">
+<input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+<button type="submit">Subscribe</button>
+</form>
+</section>
+</main>
+<footer class="container">
+<p>&copy; 2026 NoCodePath &middot; <a href="https://github.com/humancronadmin" target="_blank" rel="noopener">GitHub</a></p>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
